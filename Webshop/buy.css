@@ -1,0 +1,69 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    background: black;
+}
+
+
+div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    top: -150px;
+}
+
+.keres {
+    background: url('img/end.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    top: 160px;
+    font-family: 'Open Sans'
+}
+
+#pods2 {
+    width: 600px;
+}
+
+.des {
+    font-family: 'TeXGyreBonum', sans-serif;
+    color: white;
+    position: absolute;
+}
+
+#bal-felso {
+    left: 60%;
+    top: 29%;
+    font-size: 30px;
+}
+
+#bal-also {
+    left: 56%;
+    top: 53%;
+    font-size: 30px;
+}
+
+#jobb {
+    top: 48%;
+    left: 25%;
+    font-size: 30px;
+}
+
+
+#cims {
+    font-size: 75px;
+    top: 70%;
+}
+
+#decr {
+    top: 90%;
+    font-size: 20px;
+}
+
+#telo::before {
+    content: "+36 70 213 1377";
+}

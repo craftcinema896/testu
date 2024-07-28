@@ -1,0 +1,624 @@
+@import url('https://fonts.cdnfonts.com/css/aileron');
+@import url('https://fonts.cdnfonts.com/css/tex-gyre-bonum');
+
+@-webkit-keyframes breathing {
+    0% { -webkit-transform: scale(0.9); transform: scale(0.9); }
+    25% { -webkit-transform: scale(1); transform: scale(1); }
+    60% { -webkit-transform: scale(0.9); transform: scale(0.9); }
+    100% { -webkit-transform: scale(0.9); transform: scale(0.9); }
+}
+
+@keyframes breathing {
+    0% { -webkit-transform: scale(0.9); -ms-transform: scale(0.9); transform: scale(0.9); }
+    25% { -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
+    60% { -webkit-transform: scale(0.9); -ms-transform: scale(0.9); transform: scale(0.9); }
+    100% { -webkit-transform: scale(0.9); -ms-transform: scale(0.9); transform: scale(0.9); }
+}
+
+#cim {
+    font-size: 130px;
+}
+
+#img3 {
+    left: -50px; position: relative;
+    transform: rotate(20deg); 
+}
+
+#img4 {
+    transform: rotate(-10deg);
+    width: 20%;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+.ar {
+    position: relative;
+    font-weight: bold;
+    left: 19%;
+    width: 25%;
+    top: -69px;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('img/Bakcground.jpg') no-repeat center center;
+    background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    z-index: 0;
+}
+
+.main-section h1 {
+    font-size: 70px;
+    font-weight: bold;
+    margin: 0;
+    z-index: 1;
+}
+
+.main-section span {
+    font-size: 26px;
+    z-index: 2;
+}
+
+.main-section .subtitle {
+    font-size: 20px;
+    color: #ccc;
+    margin: 20px 0 0 0;
+    z-index: 1;
+}
+
+.main-section .subtitle span {
+    margin: 0 10px;
+}
+
+.second-section {
+    z-index: -1;
+}
+
+.second-section, .thurd-section, .fourth-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 50px;
+    background-color: black;
+    height: 100%;
+}
+
+.second-section img, .thurd-section img, .fourth-section img {
+    max-width: 50%;
+    height: auto;
+}
+
+.second-section .content, .thurd-section .content, .fourth-section .content {
+    max-width: 50%;
+    padding: 20px;
+}
+
+.second-section h2, .thurd-section h2, .fourth-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.second-section p, .thurd-section p, .fourth-section p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.second-section .button, .thurd-section .button, .fourth-section .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.second-section .button:hover, .thurd-section .button:hover, .fourth-section .button:hover {
+    background-color: #ddd;
+}
+
+/* Tablet nézet (768px és 1024px között) */
+@media screen and (max-width: 1900px) and (min-width: 768px) {
+    .ar {
+        margin-left: 2%;
+    }
+
+    #img3 {
+        width: 20%;
+    }
+
+    h1#cim {
+        font-size: calc(36px + 5vw);
+    }
+
+
+    .main-section .subtitle span {
+        font-size: calc(7px + 1vw);
+    }
+}
+
+@media screen and (max-width: 1700px) and (min-width: 768px) {
+    .ar {
+        margin-left: 4%;
+    }
+}
+
+@media screen and (max-width: 1620px) and (min-width: 768px) {
+    #img4 {
+        width: 22%;
+    }
+
+    #cim {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 1500px) and (min-width: 768px) {
+    .ar {
+        margin-left: 7%;
+    }
+
+    #cim {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 768px) {
+    .ar {
+        margin-left: 7%;
+    }
+    
+    #img3 {
+        width: 25%;
+    }
+
+    #img4 {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1368px) and (min-width: 768px) {
+    #img3 {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1335px) and (min-width: 768px) {
+    .ar {
+        margin-left: 10%;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1215px) and (min-width: 768px) {
+    .ar {
+        margin-left: 13%;
+        width: 30%;
+    }
+
+    #img3 {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1130px) and (min-width: 768px) {
+    .ar {
+        margin-left: 13%;
+        width: 40%;
+    }
+
+
+}
+
+@media screen and (max-width: 1100px) and (min-width: 768px) {
+    .ar {
+        margin-left: 15%;
+        width: 40%;
+    }
+
+    #img4 {
+        width: 30%;
+    }
+
+    #cim {
+        font-size: 70px;
+    }
+
+}
+
+@media screen and (max-width: 1030px) {
+    
+    /*Second*/
+
+    .second-section .content {
+        top: 160%;
+        position: absolute;
+    }
+
+    #img2 {
+        top: -18%;
+        transform: rotate(30deg);
+        width: 30%;
+        position: relative;
+    }
+
+    /*Thurd*/
+
+    .thurd-section .content {
+        top: 270%;
+        position: absolute;
+    }
+
+    #img3 {
+        top: -20%;
+        position: relative;
+        transform: rotate(30deg);
+    }
+
+    /*Fourth*/
+
+    .fourth-section .content {
+        top: 380%;
+        position: absolute;
+    }
+
+    #img4 {
+        top: -25%;
+        transform: rotate(30deg);
+        width: 32%;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .ar{
+        margin-left: 18%;
+    }
+}
+
+
+
+@media screen and (max-width: 930px){
+    #img3 {
+        width: 40%;
+        left: -4%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 860px) {
+    .ar{
+        margin-left: 20%;
+    }
+
+    #img2 {
+        width: 35%;
+    }
+
+    #img3 {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .ar{
+        margin-left: 23%;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .ar{
+        margin-left: 26%;
+    }
+
+    #img2 {
+        width: 40%;
+    }
+
+    #img3 {
+        width: 45%;
+        left: -5%;
+    }
+}
+@media screen and (max-width: 768px) {
+
+    #img2 {
+        display: none;
+    }
+
+    #img3 {
+        display: none;
+    }
+
+    #img4 {
+        display: none;
+    }
+
+    #cim {
+        font-size: 7vw;
+    }
+
+    .main-section .subtitle span {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 705px) {
+    .ar{
+        margin-left: 35%;
+    }
+
+    #img2 {
+        display: none;
+    }
+
+    #img3 {
+        display: none;
+    }
+
+    #img4 {
+        display: none;
+    }
+
+    .second-section {
+        top: -170%;
+        position: relative;
+    }
+
+    .thurd-section {
+        top: -360%;
+        position: relative;
+    }
+
+    .fourth-section {
+        top: -540%;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .ar{
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h2.ar{
+        font-size: 30px;
+        top: -60px;
+    }
+
+    .ar{
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    h2.ar{
+        font-size: 30px;
+        top: -60px;
+    }
+    
+    .ar{
+        margin-left: 40%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .second-section {
+        top: -170%;
+        position: relative;
+    }
+
+    .thurd-section {
+        top: -350%;
+        position: relative;
+    }
+
+    .fourth-section {
+        top: -525%;
+        position: relative;
+    }
+
+    #cim {
+        font-size: 8vw;
+    }
+
+    .main-section .subtitle span {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .ar {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h2.ar {
+        font-size: 25px;
+        margin-left: 50;
+    }
+
+    .button {
+        position: relative;
+        font-size: 15px;
+        left: -5%;
+        top: -7px;
+    }
+
+    p {
+        width: 150%;
+        left: -30%;
+        position: relative;
+        text-align: center;
+    }
+
+    h2.air {
+        left: 10%;
+        position: relative;
+    }
+
+    #big {
+        position: relative;
+        left: -5.4%;
+        width: 100%;
+    }
+
+    .second-section {
+        top: -170%;
+        position: relative;
+    }
+
+    .thurd-section {
+        top: -355%;
+        position: relative;
+    }
+
+    .fourth-section {
+        top: -540%;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 493px) {
+    #big {
+        width: 120%;
+    }
+}
+
+@media screen and (max-width: 436px) {
+    .ar {
+        margin-left: 47%;
+    }
+
+    h2.air {
+        left: 5px;
+        position: relative;
+    }
+
+    #big {
+        left: -9%;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .ar {
+        margin-left: 50%;
+    }
+
+    #big {
+        left: -12%;
+        width: 140%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .ar {
+        margin-left: 55%;
+        width: 65%;
+    }
+
+    #big {
+        left: -14%;
+    }
+
+    .button {
+        font-size: 11px;
+        left: -30px;
+        top: -10px;
+    }
+
+    h2.air {
+        font-size: 35px;
+        left: -3px;
+    }
+
+    h2.ar {
+        font-size: 25px;
+        margin-left: 35%;
+    }
+
+    p.describcie {
+        font-size: 13px;
+    }
+
+    .second-section {
+        top: -170%;
+        position: relative;
+    }
+
+    .thurd-section {
+        top: -365%;
+        position: relative;
+    }
+
+    .fourth-section {
+        top: -560%;
+        position: relative;
+    }
+
+    #cim {
+        font-size: 9vw;
+    }
+
+    .main-section .subtitle span {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    h2.air {
+        width: 120%;
+    }
+
+    #big {
+        left: -22%;
+        width: 160%;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    h2.ar {
+        margin-left: 40%;
+        width: 75%;
+    }
+
+    #big {
+        left: -24%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    h2.ar {
+        margin-left: 45%;
+    }
+
+    p.describcie {
+        left: -20%;
+    }
+}
